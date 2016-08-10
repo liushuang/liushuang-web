@@ -22,4 +22,9 @@ public class IndexController {
         model.addAttribute("time", LocalDateTime.now());
         return "index";
     }
+
+    @RequestMapping("/")
+    public String indexDefault(Model model) {
+        return "index";
+    }
 }
