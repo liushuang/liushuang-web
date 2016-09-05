@@ -1,10 +1,14 @@
-<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:include="/common/common :: header('liushuang index')"></head>
 <body>
-<h2>
-    Hello LiuShuang!
-</h2>
-<h2>
-    欢迎来到刘爽的个人主页！
-</h2>
+<nav th:substituteby="/common/common :: nav"/>
+<div class="container theme-showcase" role="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <h1>Hello, world!</h1>
+        <p>无聊的时候来写写代码，积累一下平时遇到的问题吧。</p>
+    </div>
+</div>
 </body>
 </html>
